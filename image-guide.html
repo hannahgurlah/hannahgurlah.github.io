@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Guide - Different Ways to Add Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .code-example {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .image-demo {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-demo img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Image Guide - Different Ways to Add Images</h1>
+    
+    <div class="section">
+        <h2>1. Basic Image Tag</h2>
+        <p>The most common way to add images in HTML is using the <code>&lt;img&gt;</code> tag.</p>
+        
+        <h3>Basic Syntax:</h3>
+        <div class="code-example">
+            &lt;img src="path/to/image.jpg" alt="Description of image"&gt;
+        </div>
+        
+        <h3>Example from your codebase:</h3>
+        <div class="code-example">
+            &lt;img src="assets/images/about/about.png" alt="About"&gt;
+        </div>
+        
+        <div class="image-demo">
+            <img src="assets/images/favicon.png" alt="Favicon example" width="50">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Images with Width and Height Attributes</h2>
+        <p>You can specify the dimensions directly in the HTML attributes.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" width="300" height="200"&gt;
+        </div>
+        
+        <h3>Example from your codebase:</h3>
+        <div class="code-example">
+            &lt;img src="https://hannahgurlah.github.io/best-regards.png" alt="Hannah Pañares" height="40"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Images with CSS Styling</h2>
+        <p>You can add inline CSS styles to customize the appearance.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" style="border-radius: 10%; margin-bottom: 10px;"&gt;
+        </div>
+        
+        <h3>Example from your codebase:</h3>
+        <div class="code-example">
+            &lt;img src="https://hannahgurlah.github.io/hannah-bw.jpg" alt="Hannah Pañares" width="120" style="border-radius: 10%;"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Images with CSS Classes</h2>
+        <p>Using CSS classes for styling and animations.</p>
+        
+        <div class="code-example">
+            &lt;img class="animate-element delay7 fadeInUp" src="assets/images/about/about.png" alt="About"&gt;
+        </div>
+        
+        <h3>Example from your codebase:</h3>
+        <div class="code-example">
+            &lt;img class="shape-one animate-element delay10 bounceIn" src="assets/images/about/shape-one.png" alt="Shape"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Responsive Images</h2>
+        <p>Making images responsive for different screen sizes.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" style="max-width: 100%; height: auto;"&gt;
+        </div>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" class="img-fluid"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Images with Links</h2>
+        <p>Making images clickable by wrapping them in anchor tags.</p>
+        
+        <div class="code-example">
+            &lt;a href="https://example.com"&gt;
+                &lt;img src="image.jpg" alt="Clickable image"&gt;
+            &lt;/a&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Images with Figure and Figcaption</h2>
+        <p>Using semantic HTML for images with captions.</p>
+        
+        <div class="code-example">
+            &lt;figure&gt;
+                &lt;img src="image.jpg" alt="Description"&gt;
+                &lt;figcaption&gt;Caption for the image&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Background Images with CSS</h2>
+        <p>Using CSS to set images as background.</p>
+        
+        <div class="code-example">
+            &lt;div style="background-image: url('image.jpg'); background-size: cover; height: 300px;"&gt;
+                Content here
+            &lt;/div&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Images with Loading Attributes</h2>
+        <p>Optimizing image loading performance.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" loading="lazy"&gt;
+        </div>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" loading="eager"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Images with Srcset for Different Resolutions</h2>
+        <p>Providing different image sizes for different screen densities.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" 
+                 srcset="image-small.jpg 300w, image-medium.jpg 600w, image-large.jpg 900w"
+                 sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px"
+                 alt="Responsive image"&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>11. Images with Picture Element</h2>
+        <p>Using the picture element for more control over image sources.</p>
+        
+        <div class="code-example">
+            &lt;picture&gt;
+                &lt;source media="(min-width: 800px)" srcset="large-image.jpg"&gt;
+                &lt;source media="(min-width: 400px)" srcset="medium-image.jpg"&gt;
+                &lt;img src="small-image.jpg" alt="Fallback image"&gt;
+            &lt;/picture&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>12. Images with Object-fit</h2>
+        <p>Controlling how images fit within their containers.</p>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" style="object-fit: cover; width: 300px; height: 200px;"&gt;
+        </div>
+        
+        <div class="code-example">
+            &lt;img src="image.jpg" alt="Description" style="object-fit: contain; width: 300px; height: 200px;"&gt;
+        </div>
+    </div>
+
+    <div class="highlight">
+        <h3>Important Attributes for Images:</h3>
+        <ul>
+            <li><strong>src</strong>: The path to the image file (required)</li>
+            <li><strong>alt</strong>: Alternative text for accessibility (required for accessibility)</li>
+            <li><strong>width</strong>: Width of the image in pixels</li>
+            <li><strong>height</strong>: Height of the image in pixels</li>
+            <li><strong>loading</strong>: "lazy" or "eager" for loading behavior</li>
+            <li><strong>srcset</strong>: Multiple image sources for different screen sizes</li>
+            <li><strong>sizes</strong>: Sizes attribute for responsive images</li>
+        </ul>
+    </div>
+
+    <div class="highlight">
+        <h3>Best Practices:</h3>
+        <ul>
+            <li>Always include the <code>alt</code> attribute for accessibility</li>
+            <li>Use appropriate image formats (JPEG for photos, PNG for graphics with transparency)</li>
+            <li>Optimize images for web (compress file sizes)</li>
+            <li>Use responsive images for better performance</li>
+            <li>Consider lazy loading for images below the fold</li>
+            <li>Provide fallback images when using modern techniques</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Common Image Paths in Your Project:</h2>
+        <div class="code-example">
+            <!-- Local images in assets folder -->
+            &lt;img src="assets/images/favicon.png" alt="Favicon"&gt;
+            &lt;img src="assets/images/about/about.png" alt="About section"&gt;
+            &lt;img src="assets/images/services/service-icon1.png" alt="Service icon"&gt;
+            &lt;img src="assets/images/weapons/vscode.png" alt="VS Code"&gt;
+            
+            <!-- Root level images -->
+            &lt;img src="hannah-bw.jpg" alt="Hannah black and white"&gt;
+            &lt;img src="best-regards.png" alt="Best regards"&gt;
+            
+            <!-- External/absolute URLs -->
+            &lt;img src="https://hannahgurlah.github.io/best-regards.png" alt="Best regards"&gt;
+        </div>
+    </div>
+</body>
+</html> 
