@@ -1,0 +1,92 @@
+// filter scss
+
+.filter-small-top-full{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media #{$sm-layout} {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .left-filter{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        span{
+            min-width: max-content;
+            color: var(--color-heading-1);
+        }
+        .nice-select-wrap{
+            height: auto;
+            padding: 10px 20px;
+            border-width: 2px 5px 5px 2px;
+            border-style: solid;
+            border-color: var(--color-heading-1);
+            border-radius: 0;
+            .drop{
+                color:  #110C2D;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                padding: 0px 40px 10px 10px;
+            }
+            ul#price{
+                border-width: 2px 5px 5px 2px;
+                border-style: solid;
+                border-color: var(--color-heading-1);
+                border-radius: 0;
+                top: 100%;
+                right: -5px;
+            }
+        }
+    }
+    .right-filter{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media #{$large-mobile} {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        span{
+            color:  var(--color-heading-1);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        .nav-tabs{
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            li{
+                margin: 0;
+                padding: 0;
+                button{
+                    
+                    border-width: 2px 5px 5px 2px;
+                    border-style: solid;
+                    border-color: var(--color-heading-1);
+                    padding: 6px 13px;
+                    svg{
+                        path{
+                            fill: var(--color-heading-1);
+                        }
+                    }
+                    &.active{
+                        background: var(--color-primary);
+                        span{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

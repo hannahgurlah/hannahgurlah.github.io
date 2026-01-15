@@ -1,0 +1,122 @@
+.rts-contact-area{
+    .section-inner{
+        margin-top: 70px;
+    }
+    .get-in-touch{
+        .contact-wrapper-list{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                border-width: 2px 5px 5px 2px;
+                border-style: solid;
+                border-color: var(--color-heading-1);
+                display: flex;
+                gap: 30px;
+                padding: 37px 50px;
+                margin: 0 0 20px;
+                @media(max-width:1200px){
+                    padding: 35px 30px;
+                }
+                @media(max-width:576px){
+                    padding: 30px 20px;
+                }
+                @media(max-width:450px){
+                    flex-direction: column;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .text{
+                    h4{
+                        color: var(--color-white);
+                        margin-bottom: 12px;
+                        @media(max-width:1200px){
+                            margin-bottom: 8px;
+                        }
+                    }
+                    .desc{
+                        margin-bottom: 0;
+                        color: var(--color-white);
+                        a{
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-form{
+    padding: 40px;
+    border-width: 2px 5px 5px 2px;
+    border-style: solid;
+    border-color: var(--color-heading-1);
+    margin-left: 50px;
+    @media(max-width:1200px) and (min-width:992px){
+        padding: 40px 30px;
+    }
+    @media(max-width:991px){
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    @media(max-width:576px){
+        padding: 30px;
+    }
+    @media(max-width:450px){
+        padding: 30px 20px;
+    }
+    .heading-title{
+        margin-bottom: 20px;
+    }
+    .form-inner{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        .single-input{
+            width: 48%;
+            padding: 13px 24px;
+            border-width: 2px 5px 5px 2px;
+            border-style: solid;
+            border-color: var(--color-heading-1);
+            @media(max-width:1200px) and (min-width:992px){
+                width: 47%;
+            }
+            @media(max-width:768px){
+                width: 47%;
+            }
+            @media(max-width:576px){
+                width: 100%;
+            }
+            input{
+                padding: 0;
+                color: var(--color-heading-1);
+                &::placeholder{
+                    color: var(--color-heading-1);
+                    font-size: 15px;
+                }
+            }
+            textarea{
+                padding: 0;
+                color: var(--color-heading-1);
+                &::placeholder{
+                    color: var(--color-heading-1);
+                    font-size: 15px;
+                }
+            }
+            .nice-select-wrap{
+                height: auto;
+                .drop{
+                    padding: 0;
+                    font-size: 15px;
+                    color: var(--color-heading-1);
+                }
+            }
+            &.message{
+                width: 100%;
+                min-height: 103px;
+            }
+        }
+    }
+}
